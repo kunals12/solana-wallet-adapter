@@ -14,7 +14,7 @@ import { clusterApiUrl } from '@solana/web3.js';
 import '@solana/wallet-adapter-react-ui/styles.css';
 import {RequestAirdrop} from './Airdrop';
 import { GetBalance } from "./Balance";
-import './app.css';
+import './App.css';
 
 function App() {
   const network = WalletAdapterNetwork.Devnet;
