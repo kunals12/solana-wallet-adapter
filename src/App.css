@@ -1,4 +1,18 @@
 /* app.css */
+html, body {
+  height: 100%;
+  overflow: hidden; /* Prevent default scrolling of body */
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevent root from overflowing */
+}
+
 .container {
   background: #ffffff;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
@@ -8,10 +22,17 @@
   width: 100%;
   text-align: center;
   transition: all 0.3s ease;
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  max-height: 100vh; /* Ensure the container doesn't exceed the screen height */
 }
 
-.container:hover {
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+.container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: #4f46e5;
+  border-radius: 4px;
 }
 
 h1 {

@@ -16,6 +16,7 @@ import {RequestAirdrop} from './Airdrop';
 import { GetBalance } from "./Balance";
 import './App.css';
 import { SendTxn } from './SendTxn';
+import { SignMessage } from './SignMsg';
 
 function App() {
   const network = WalletAdapterNetwork.Devnet;
@@ -31,9 +32,9 @@ function App() {
             <WalletDisconnectButton className="wallet-button" />
             <div className="airdrop-balance-section">
               <RequestAirdrop />
-              
               <GetBalance />
               <SendTxn />
+              <SignMessage />
             </div>
             
           </div>
