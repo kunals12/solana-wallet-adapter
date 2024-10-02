@@ -25,6 +25,7 @@ export function GetBalance() {
 
     return (
         <div>
+            <h1>Your SOL Balance</h1>
             <p>SOL Balance: {balance} SOL</p>
         </div>
     );
