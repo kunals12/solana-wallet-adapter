@@ -18,6 +18,7 @@ export function SendTxn() {
         console.log({to, amount});
         console.log(amount * LAMPORTS_PER_SOL);
         
+        // Create Txn
         const transaction = new Transaction();
         transaction.add(SystemProgram.transfer({
             fromPubkey: wallet.publicKey,

@@ -1,8 +1,7 @@
 /* eslint-disable no-unused-vars */
-import React, { FC, useEffect, useMemo } from 'react';
-import { ConnectionProvider, WalletProvider, useConnection, useWallet } from '@solana/wallet-adapter-react';
+import React, { useMemo } from 'react';
+import { ConnectionProvider, WalletProvider } from '@solana/wallet-adapter-react';
 import { WalletAdapterNetwork } from '@solana/wallet-adapter-base';
-import { UnsafeBurnerWalletAdapter } from '@solana/wallet-adapter-wallets';
 import {
   WalletModalProvider,
   WalletDisconnectButton,
